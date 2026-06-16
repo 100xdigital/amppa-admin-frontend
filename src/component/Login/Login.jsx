@@ -6,7 +6,7 @@ import axios from 'axios';
 import { useCookies } from 'react-cookie';
 import { useDispatch } from 'react-redux';
 import { loginSuccess } from '../../redux/slices/authSlice';
-import imag1 from "../../assets/Amppa Logo Png 1.png"
+import imag1 from "../../assets/Amppa Logo png 1.png"
 
 function Login() {
   const navigate = useNavigate();

@@ -8,7 +8,7 @@ import
  import { GrBlog } from "react-icons/gr";
  import { IoCloseCircleOutline } from "react-icons/io5";
 
-  import imag1 from "../assets/Amppa Logo Png 1.png"
+  import imag1 from "../assets/amppa-logo.png"
  
  function Sidebar({ isVisible,toggleSidebar  }) {
   const role=useSelector(state=>state.auth.role);

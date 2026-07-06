@@ -31,7 +31,8 @@ const dispatch = useDispatch();
     e.preventDefault();
     setLoading(true);
     try {
-        const response = await axios.post(import.meta.env.VITE_API_URL + '/api/auth/login', input);
+        const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const response = await axios.post(`${API_BASE}/api/auth/login`, input);
         if (response && response.data && response.data.token) {
             const token = response.data.token;
             console.log(`Token------>${token}`);

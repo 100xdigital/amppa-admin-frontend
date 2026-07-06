@@ -20,7 +20,7 @@ function Offer() {
   const [query, setQuery] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 5;
-  const API_BASE = "http://localhost:5000"; // ⚙️ Change to server URL if hosted
+  const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:5000";// ⚙️ Change to server URL if hosted
 
   // 🔹 Fetch all offers
   const fetchOffers = async () => {

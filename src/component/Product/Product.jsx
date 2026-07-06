@@ -230,7 +230,7 @@ api.get(`/products`)
   setProductImages(updatedFiles);
 };
 
-  const imagePath="http://localhost:5000";
+const imagePath=import.meta.env.VITE_API_URL || "http://localhost:5000";
   return (
     <>
       <div className="wrapper d-flex align-items-stretch">

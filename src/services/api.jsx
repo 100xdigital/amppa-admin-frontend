@@ -6,7 +6,7 @@ const cookies = new Cookies();
 const token = cookies.get('token');
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL + '/api',
+ baseURL: import.meta.env.VITE_API_URL ? `${import.meta.env.VITE_API_URL}/api` : 'http://localhost:5000/api',
 
 });
 // Add a request interceptor to set the token dynamically before each request

@@ -246,21 +246,23 @@ const handleEditblog = async (id) => {
                         style={{ display: 'none' }}
                         onChange={handleImageUpload}
                       />
-                      {!image && (
-                      <button
+<button
                         onClick={handleButtonClick}
                         style={{
                           position: 'absolute',
-                          bottom: '30px',
+                          bottom: '5px',
                           left: '50%',
-                          color: '#000',
+                          color: '#fff',
+                          background: 'rgba(0,0,0,0.6)',
                           transform: 'translateX(-50%)',
-                          background: 'transparent',
                           border: 'none',
+                          borderRadius: '4px',
+                          padding: '3px 8px',
+                          fontSize: '11px',
                           cursor: 'pointer',
                         }}
                       >
-                        Upload Image
+                        Change Image
                       </button>
                       )}
                       {image ? (
